@@ -33,7 +33,28 @@ public class Start2 {
     WebElement elc2 = wd.findElement(By.cssSelector((".username-readonly")));
     WebElement elc3 = wd.findElement((By.cssSelector(("[data-testid='header-member-menu-button']"))));
 
-  //Log in
+    //xpath
+    WebElement el1x = wd.findElement(By.xpath("//*[@id='user']"));
+    WebElement el2x = wd.findElement(By.xpath("//*[@class='username-readonly']"));
+    WebElement el3x = wd.findElement(By.xpath("//*[@data-testid='header-member-menu-button']"));
+    WebElement el4x = wd.findElement(By.xpath("//*[@href='#login']"));
+    WebElement el5x = wd.findElement(By.xpath("//*[@id='login']"));
+    WebElement el6x = wd.findElement(By.xpath("//*[@id='password']"));
+    WebElement el7x = wd.findElement(By.xpath("//*[@id='login-submit']"));
+
+    //xpath ends-contains- starts
+    WebElement logx1 = wd.findElement(By.xpath("//*[@aria-label='Trello']"));
+    WebElement logx2 = wd.findElement(By.xpath("//*[contains(@aria-label,'rel')]"));
+    WebElement logx3 = wd.findElement(By.xpath("//*[starts-with(@aria-label,'Tr')]"));
+
+    //log out
+    WebElement elc3css = wd.findElement((By.cssSelector(("[data-testid='header-member-menu-logout']"))));
+    WebElement elxpath3 = wd.findElement(By.xpath("//*[@data-testid='header-member-menu-logout']"));
+    WebElement ellogc2 = wd.findElement(By.cssSelector("#logout-submit"));
+    WebElement ellogx2 = wd.findElement(By.xpath("//*[@id='logout-submit']"));
+
+
+    //Log in
   WebElement ell1 = wd.findElement((By.cssSelector("[href='/login']")));
 
 }
